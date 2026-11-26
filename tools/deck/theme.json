@@ -1,0 +1,19 @@
+{
+  "name": "Laerdal style",
+  "headFontFace": "Calibri",
+  "bodyFontFace": "Calibri",
+  "colors": {
+    "dk1": "1F1F1F",
+    "lt1": "FFFFFF",
+    "dk2": "595959",
+    "lt2": "F5F5F5",
+    "accent1": "E42313",
+    "accent2": "1F1F1F",
+    "accent3": "1B7F4B",
+    "accent4": "A85A00",
+    "accent5": "2F6FEA",
+    "accent6": "7B4FE0",
+    "hlink": "1F1F1F",
+    "folHlink": "595959"
+  }
+}

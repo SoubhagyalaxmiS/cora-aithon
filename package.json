@@ -1,0 +1,21 @@
+{
+  "name": "cora-clinical-competency-passport",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CORA (Competency Optimization Readiness Agent): a clinical competency passport prototype with an AI assistant. Prototype, poster, architecture, deck and jury guide.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build:prototype": "python3 app/prototype/build.py",
+    "pretest": "python3 app/prototype/build.py",
+    "test": "node --test",
+    "build:deck": "node tools/deck/build.js"
+  },
+  "devDependencies": {
+    "jsdom": "^31.0.1",
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-icons": "^5.7.0",
+    "sharp": "^0.35.4"
+  }
+}
