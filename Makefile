@@ -1,4 +1,4 @@
-.PHONY: install test prototype poster architecture images deck guide docs all
+.PHONY: install test prototype run poster architecture images deck guide docs all
 
 install:
 	npm install
@@ -9,6 +9,9 @@ test:
 
 prototype:
 	python3 app/prototype/build.py
+
+run: prototype
+	python3 -m http.server 8000 --directory app/prototype/dist
 
 poster:
 	python3 tools/poster/build.py

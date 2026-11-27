@@ -31,13 +31,30 @@ Built for AIThon 2026 (track: Automate the everyday). Everything in the prototyp
 
 ## Quick start
 
+### Run the app locally
+
+The prototype is a static page and does not need Node.js, npm packages, API keys, or a backend.
+With Python 3 installed, run:
+
 ```bash
-npm install                      # test and deck dependencies
+make run
+```
+
+Then open <http://localhost:8000/clinical-identity-passport.html>. Stop the server with `Ctrl+C`.
+The app uses synthetic data and mock sign-in; the password for every demo account is `passport-demo`.
+Live AI is available only on a host that provides `window.claude.use("sample")`; otherwise the app
+uses its built-in offline answers.
+
+### Tests and document tooling
+
+```bash
+npm install                      # test and deck dependencies (requires Node.js 20+)
 pip install -r requirements.txt  # document generators
 npm test                         # builds the prototype, then runs 22 tests
 ```
 
-Open `app/prototype/dist/clinical-identity-passport.html` in a browser.
+To open the built page directly without a local server, use
+`app/prototype/dist/clinical-identity-passport.html`.
 
 **Demo sign-in.** Pick a demo account on the sign-in screen. The password for all of them is `passport-demo`.
 Sign-in is a mock: nothing is authenticated.
